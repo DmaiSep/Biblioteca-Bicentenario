@@ -9,13 +9,21 @@
 
                         <a (click)="oupen('/home')">
                             <p class="d-inline-block p-3 font-weight-bold  text-default " style="font-size: 20px;">Inicio</p>
-                        </a> /
-                        
+                        </a> 
+                        /
                         <p class="d-inline-block p-3 " style="font-size: 20px;color: #66615b;font-weight: 400;">Libros</p>
                         /
-                        <p class="d-inline-block p-3 " style="font-size: 20px;color: #66615b;font-weight: 400;">Alumno Preescolar</p>
-                        /
-                        <p class="d-inline-block p-3 " style="font-size: 20px;color: #66615b;font-weight: 400;">Literario</p>
+                        <span *ngIf="bread.perfil">
+                            <p class="d-inline-block p-3 " style="font-size: 20px;color: #66615b;font-weight: 400;">{{bread.perfil}}</p>
+                            /
+                        </span>
+                        <span *ngIf="bread.nivel">
+                            <p class="d-inline-block p-3 " style="font-size: 20px;color: #66615b;font-weight: 400;">{{bread.nivel}}</p>
+                            /
+                        </span>
+                        <span *ngIf="bread.genero">
+                            <p class="d-inline-block p-3 " style="font-size: 20px;color: #66615b;font-weight: 400;">{{bread.genero}}</p>
+                        </span>
                        
                     </div>
                   
