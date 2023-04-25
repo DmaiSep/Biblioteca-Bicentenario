@@ -1,6 +1,7 @@
 .masonry-item {
     width: 350px;
     margin: 10px;
+    animation: Items 1.1s ease-in forwards;
   }
   
   .masonry-item img {
@@ -9,4 +10,25 @@
   
 .masonry-item {
     transition: top 0.4s ease-in-out, left 0.4s ease-in-out;
+  }
+
+ 
+  
+  @keyframes Items {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.3) rotateY(90deg);
+      transform: scale(0.3) rotateY(90deg);
+    }
+    60% {
+      -webkit-transform: scale(1.4);
+      transform: scale(1.4);
+    }
+    90% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+    }
   }

@@ -82,4 +82,6 @@ export class AlumPreLitComponent {
   
   useImagesLoaded = "true"; // default: false, use true incase if of any images to be loaded in grid items
 
+  
+
 }

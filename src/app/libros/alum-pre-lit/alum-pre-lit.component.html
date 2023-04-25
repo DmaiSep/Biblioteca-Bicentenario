@@ -1,5 +1,5 @@
 <ngx-masonry>
-    <div ngxMasonryItem class="masonry-item text-center" *ngFor="let item of masonryItems" >
+    <div ngxMasonryItem class="masonry-item text-center grid-item" *ngFor="let item of masonryItems" >
      <img width="300" alt="Angular Logo" src="{{item.img}}"  (click)="openModal( item.id )"/>
      <h5>{{item.title}}</h5>
      <h5>Autor: {{item.autor}}</h5>
