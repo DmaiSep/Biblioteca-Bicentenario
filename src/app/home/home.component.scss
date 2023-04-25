@@ -1,0 +1,45 @@
+.post {
+	position: relative;
+	background-color: #fff;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+	
+	img {
+		width: 100%;
+		display: block;
+	}
+	
+	&::before {
+		
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #ff2c6d;
+		width: 1.5rem;
+		height: 1.5rem;
+		color: #fff;
+		text-align: center;
+		line-height: 1.5rem;
+		font-size: 80%;
+	}
+}
+
+// Masonry
+@media screen and (min-width: 1200px) {
+	.c-multicol {
+		gap: 2rem;
+		column-width: 30vw;
+		// column-count: 2;
+	}
+	
+	.post {
+		break-inside: avoid;
+	}
+}
+@media screen and (min-width: 1900px) {
+	.c-multicol {
+		column-width: 25vw;
+		
+	}	
+}

@@ -1,0 +1,115 @@
+<app-header></app-header>
+<div >
+    <div class="jarallax jarallax-my-video">
+      <div class="full-bg-img mask rgba-white-light">
+        <div class="container">
+          <div
+            class="d-flex align-items-center d-flex justify-content-center"
+            style="height: 500px"
+          >
+            <div class="row mt-5">
+              <div class="col-md-12 wow fadeIn mb-3">
+                <div class="intro-info-content text-center">
+                  <h2
+                    class="h1 display-1 mb-2 wow fadeInDown"
+                    data-wow-delay="0.3s"
+                  >
+                   <!-- Biblioteca Bicentenario --> 
+                  </h2>
+                 
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div>
+
+  <div class="container mt-5 mb-5 text-center">
+    <h1>Biblioteca Bicentenario</h1>
+    <div class="c-multicol text-center">
+      <div class="post ">
+        
+        <img src="https://source.unsplash.com/skAv-NHClaE/800x600" alt="Modern Office" >
+        <h1 class="mt-3">Libros</h1>
+        <mdb-accordion [multiple]="false">
+          <mdb-accordion-item [collapsed]="true">
+            <mdb-accordion-item-head>Alumno Preescolar</mdb-accordion-item-head>
+            <mdb-accordion-item-body>
+              <ul style="list-style: none;">
+                <li><a [routerLink]="['/libros/inicio/', { outlets: { book: 'Aluprelit' }}]" routerLinkActive="router-link-active" >Literario</a></li>
+                
+                <li><a [routerLink]="['/libros/inicio/', { outlets: { book: 'Alupreinf' }}]" routerLinkActive="router-link-active" >Informativo</a>
+                  
+                </li>
+              </ul>
+            
+            </mdb-accordion-item-body>
+          </mdb-accordion-item>
+        
+          <mdb-accordion-item>
+            <mdb-accordion-item-head>Alumno Primaria</mdb-accordion-item-head>
+            <mdb-accordion-item-body>
+              <ul style="list-style: none;">
+                <li><a [routerLink]="['/libros/inicio/', { outlets: { book: 'Aluprilit' }}]" routerLinkActive="router-link-active" >Literario</a></li>
+                
+                <li><a [routerLink]="['/libros/inicio/', { outlets: { book: 'Alupriinf' }}]" routerLinkActive="router-link-active" >Informativo</a>
+              </ul>
+             
+            </mdb-accordion-item-body>
+          </mdb-accordion-item>
+        
+          <mdb-accordion-item>
+            <mdb-accordion-item-head>Alumno Secundaria </mdb-accordion-item-head>
+            <mdb-accordion-item-body>
+              <ul style="list-style: none;">
+                <li><a [routerLink]="['/libros/inicio/', { outlets: { book: 'Aluseclit' }}]" routerLinkActive="router-link-active" >Literario</a></li>
+                
+                <li><a [routerLink]="['/libros/inicio/', { outlets: { book: 'Alusecinf' }}]" routerLinkActive="router-link-active" >Informativo</a>
+              </ul>
+             
+            </mdb-accordion-item-body>
+          </mdb-accordion-item>
+          <mdb-accordion-item>
+            <mdb-accordion-item-head>Padres de Familia </mdb-accordion-item-head>
+            <mdb-accordion-item-body>
+              <ul style="list-style: none;">
+                <li><a [routerLink]="['/libros/inicio/', { outlets: { book: 'Famlit' }}]" routerLinkActive="router-link-active" >Literario</a></li>
+                
+                <li><a [routerLink]="['/libros/inicio/', { outlets: { book: 'Faminf' }}]" routerLinkActive="router-link-active" >Informativo</a>
+              </ul>
+             
+            </mdb-accordion-item-body>
+          </mdb-accordion-item>
+          <mdb-accordion-item>
+            <mdb-accordion-item-head>Docentes </mdb-accordion-item-head>
+            <mdb-accordion-item-body>
+              <ul style="list-style: none;">
+                <li><a [routerLink]="['/libros/inicio/', { outlets: { book: 'Doclit' }}]" routerLinkActive="router-link-active" >Literario</a></li>
+                
+                <li><a [routerLink]="['/libros/inicio/', { outlets: { book: 'Docinf' }}]" routerLinkActive="router-link-active" >Informativo</a>
+              </ul>
+            </mdb-accordion-item-body>
+          </mdb-accordion-item>
+        </mdb-accordion>
+    
+      </div> <!-- end post -->
+      <div class="post ">
+        <img src="https://source.unsplash.com/Dw7ldQfe3dU/800x800" alt="Water Droplets">
+        <h1>Videos</h1>
+        </div> <!-- end post -->
+      <div class="post ">
+        <img src="https://source.unsplash.com/lccZLHwylHg/800x1000" alt="Snow Covered Mountains">
+        <h1>Audio</h1>
+      </div> <!-- end post -->
+    
+    </div> <!-- end c-multicol -->
+
+  </div>
+
+
+ </div>
+<app-footer></app-footer>

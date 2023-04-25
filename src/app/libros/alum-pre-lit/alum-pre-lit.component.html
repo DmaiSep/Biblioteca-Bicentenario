@@ -1,0 +1,8 @@
+<ngx-masonry>
+    <div ngxMasonryItem class="masonry-item text-center" *ngFor="let item of masonryItems" >
+     <img width="300" alt="Angular Logo" src="{{item.img}}"  (click)="openModal( item.id )"/>
+     <h5>{{item.title}}</h5>
+     <h5>Autor: {{item.autor}}</h5>
+     <button mdbBtn type="button" gradient="aqua" rounded="true" size="sm" mdbWavesEffect (click)="openModal( item.id )">Ver más</button>
+   </div>
+  </ngx-masonry>

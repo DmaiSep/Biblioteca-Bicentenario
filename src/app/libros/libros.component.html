@@ -1,0 +1,33 @@
+<div class="page-wrapper" [ngClass]="{'toggled' : getSideBarState()}">
+    <app-sidebar></app-sidebar>
+    <main class="page-content">
+        <div class="container-fluid ">
+            <div class="bordeabajo">
+                <div class="row">
+                    <div class=" col-xs-6 col-md-6">
+                        <mdb-icon fas icon="bars" size="2x" style="color: #465056;" (click)="toggleSidebar()"></mdb-icon>
+
+                        <a (click)="oupen('/home')">
+                            <p class="d-inline-block p-3 font-weight-bold  text-default " style="font-size: 20px;">Inicio</p>
+                        </a> /
+                        
+                        <p class="d-inline-block p-3 " style="font-size: 20px;color: #66615b;font-weight: 400;">Libros</p>
+                        /
+                        <p class="d-inline-block p-3 " style="font-size: 20px;color: #66615b;font-weight: 400;">Alumno Preescolar</p>
+                        /
+                        <p class="d-inline-block p-3 " style="font-size: 20px;color: #66615b;font-weight: 400;">Literario</p>
+                       
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="container mt-5">
+                <router-outlet name="book"></router-outlet>
+            </div>
+         
+        </div>
+        <div class="overlay" (click)="toggleSidebar()" [ngClass]="{'show' : !getSideBarState()}"></div>
+
+    </main>
+
+</div>

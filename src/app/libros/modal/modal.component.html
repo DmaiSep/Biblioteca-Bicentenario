@@ -1,0 +1,19 @@
+<div class="modal-header">
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">×</span>
+    </button>
+    <h4 class="modal-title w-100" id="myModalLabel">{{dat.title}}</h4>
+  </div>
+  <div class="modal-body">
+    <div class="row container">
+      <div class="col-md-6">
+        <img src="{{dat.img}}" class="img-fluid" alt="">
+      </div>
+      <div class="col-md-6 text-center">
+        <h5>Autor: {{dat.autor}}</h5>
+        <p class="text-justify">{{dat.desc}}</p>
+      </div>
+
+    </div>
+  </div>
+  
