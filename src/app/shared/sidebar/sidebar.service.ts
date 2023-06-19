@@ -12,7 +12,7 @@ export class SidebarService {
       type: 'header'
     },
     {
-      title: 'Alumno Preescolar',
+      title: 'Preescolar',
       icon: 'fas fa-book',
       active: false,
       type: 'dropdown',
@@ -29,7 +29,7 @@ export class SidebarService {
       ]
     },
     {
-      title: 'Alumno Primaria',
+      title: 'Primaria',
       icon: 'fas fa-edit',
       active: false,
       type: 'dropdown',
@@ -45,7 +45,7 @@ export class SidebarService {
       ]
     },
     {
-      title: 'Alumno Secundaria',
+      title: 'Secundaria',
       icon: 'fas fa-chart-area',
       active: false,
       type: 'dropdown',
@@ -61,7 +61,7 @@ export class SidebarService {
       ]
     },
     {
-      title: 'Padres de Familia',
+      title: 'Familias',
       icon: 'fas fa-list-alt',
       active: false,
       type: 'dropdown',
@@ -77,7 +77,7 @@ export class SidebarService {
       ]
     },
     {
-      title: 'Docente',
+      title: 'Docentes',
       icon: 'fas fa-list-alt',
       active: false,
       type: 'dropdown',
